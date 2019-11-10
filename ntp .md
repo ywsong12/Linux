@@ -8,5 +8,7 @@
 #] systemctl status ntpd             //ntp 상태 정보확인
 ```
 - 외부 인터넷사용 제한적일 경우의 설치(OS - RHEL7, CeontOS 7)
+패키지 준비 ntp-4.2.6, ntpdate-4.2.6, libopts
 ```
-#] yum 
+#]
+
