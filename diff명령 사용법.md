@@ -30,7 +30,7 @@ diff abcdir/file testdir/file  // 디렉토리 파일중 내용이 다른 파일
 1c1,3               // abcdir/file 1번째 행, testdir/file 1~3번째 행 
 < rere              //abcdir 디렉토리 file 파일에만 있는 내용 출력
 ---
-> ddddd             //testdir 디렉토리 file 파일에만 있는 내용 출력
-> dgagdagdag
-> gdag:w
+> hello             //testdir 디렉토리 file 파일에만 있는 내용 출력
+> good
+> nice
 ```
