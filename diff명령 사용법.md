@@ -20,14 +20,14 @@
 ```
 텍스트파일끼리의 비교 예시
 #] diff abc test   // diff '파일이름' '비교할파일이름' 다음과 같이 입력하여 사용
-3c3
+3c3                // 각각 3번째 행을 의미
 < ccc              // abc 에만 있는 내용 출력
 ---
 > ddd              // test 에만 있는 내용 출력 
 디렉토리에서의 비교 예시
 #] diff abcdir testdir
 diff abcdir/file testdir/file  // 디렉토리 파일중 내용이 다른 파일
-1c1,3
+1c1,3               // abcdir/file 1번째 행, testdir/file 1~3번째 행 
 < rere              //abcdir 디렉토리 file 파일에만 있는 내용 출력
 ---
 > ddddd             //testdir 디렉토리 file 파일에만 있는 내용 출력
