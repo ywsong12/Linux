@@ -24,8 +24,15 @@ FORWARD : 호스트가 목적지가 아닌 모든 패킷
 -p : 프로토콜 입력  
 -i : 입력 인터페이스 입력  
 -o : 출력 인터페이스 입력  
--j : 구칙에 맞는 패킷의 처리를 어떻게 할지 입력(accept, drop..)  
+-j : 규칙에 맞는 패킷의 처리를 어떻게 할지 입력(accept, drop..)  
 -y : SYN 패킷 허용안함  
+
+### IPTABLE Action 설정
+ACCEPT : 패킷 허용  
+DROP : 패킷 차단  
+REJECT : 패킷을 버리고 적절한 응답 패킷 전송  
+LOG : 패킷을 Syslog에 기록  
+RETURN : 호출 체인 내에서 패키 처리를 계속함  
 
 ### IPTABLE 정책 설정 예시
 1) 514(Syslog)포트에 대해 혀용 설정
