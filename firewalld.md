@@ -1,5 +1,5 @@
 ## firewalld 사용법
-### RedHat/CentOS7 버전으로 올라감에 따라 사용하게된 방화벽 설정 (이전 6이하 버전은 iptable 사용 가능하며, 7버전도 iptable명령어는 사용 가능)
+### RedHat/CentOS7 버전으로 올라감에 따라 사용하게된 방화벽 설정 명령어(이전 6이하 버전은 iptable 사용 가능하며, 7버전도 iptable명령어는 사용 가능)
 #### 명령어
 1. firewall-cmd --reload      //리로드를 진행, 방화벽 설정 후에는 리로드를 해줘야 적용 가능
 2. firewall-cmd --get-zones   //Zone 리스트 출력
