@@ -2,14 +2,30 @@
 #### 명령어
 1. firewall-cmd --reload      //리로드를 진행, 방화벽 설정 후에는 리로드를 해줘야 적용 가능
 2. firewall-cmd --get-zones   //Zone 리스트 출력
-3. firewall-cmd --get-active-zones   //활성화된 Zone 리스트 출력
-4. firewall-cmd --list-all    //사용 가능한 모든 서비스, 포트 리스트 출력
-5. firewall-cmd --zone=public --ilst-all   //Public zone에 속한 사용 가능한 모든 서비스, 포트 리스트 출력
+3. firewall-cmd --get-default-zones   //기본 설정된 Zone 리스트 출력
+4. firewall-cmd --get-active-zones   //활성화된 Zone 리스트 출력
+5. firewall-cmd --list-all    //사용 가능한 모든 서비스, 포트 리스트 출력
+6. firewall-cmd --zone=public --ilst-all   //Public zone에 속한 사용 가능한 모든 서비스, 포트 리스트 출력
 
 * --permanent : 영구적인 설정 등록(리로드 및 리부팅 시에도 규칙이 남아있음) 단, 사용시 리로드 명령어 실행하여야 적용됨.  
-##### 복잡한 룰 사용시 사용 - rich-rule
---add-rich-rule : 규칙 생성   
---rmove-rich-rule : 규칙제거    
+##### 세부적인 룰 사용시 사용 - rich-rule
+--add-rich-rule : 규칙생성   
+--rmove-rich-rule : 규칙제거 
+--list-rich-rule : 규칙확인
+
+family : IPv4또는 IPv6 선택
+source : 출발지 IP 설정
+destination : 목적지 IP 설정
+service : 서비스규칙 설정
+port : 포트 설정
+protocol : 프로토콜 설정
+forward-port : 포트포워딩 설정
+log : Syslog 기록
+audit : Audit log 기록
+accept : 허용
+reject : 거부
+drop : 차단
+
 
 #### 사용예제
 ##### Syslog(514) 포트 추가
