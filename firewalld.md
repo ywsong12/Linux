@@ -8,7 +8,7 @@
 6. firewall-cmd --zone=public --ilst-all   //Public zone에 속한 사용 가능한 모든 서비스, 포트 리스트 출력
 
 * --permanent : 영구적인 설정 등록(리로드 및 리부팅 시에도 규칙이 남아있음) 단, 사용시 리로드 명령어 실행하여야 적용됨.  
-##### 세부적인 룰 사용시 사용 - rich-rule
+##### 세부적인 룰 설정 시 사용 - rich-rule
 --add-rich-rule : 규칙생성   
 --rmove-rich-rule : 규칙제거 
 --list-rich-rule : 규칙확인  
