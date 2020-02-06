@@ -41,7 +41,10 @@ RETURN : 호출 체인 내에서 패키 처리를 계속함
 #] iptables -I INPUT 1 -p udp --dport 514 -j ACCEPT   //514 포트에 대해 허용 설정과 동시에 규칙의 는 1번으로 설정
 ```
 
-
-
+### IPTABLE 정책 설정 저장
+정책 설정 후 리부팅이나 IPTABLE을 재시작하여도 정책이 남아있도록 저장
+```
+#] service iptables save
+```
 
 
