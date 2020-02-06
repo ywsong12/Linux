@@ -11,20 +11,21 @@
 ##### 세부적인 룰 사용시 사용 - rich-rule
 --add-rich-rule : 규칙생성   
 --rmove-rich-rule : 규칙제거 
---list-rich-rule : 규칙확인
+--list-rich-rule : 규칙확인  
 
-family : IPv4또는 IPv6 선택
-source : 출발지 IP 설정
-destination : 목적지 IP 설정
-service : 서비스규칙 설정
-port : 포트 설정
-protocol : 프로토콜 설정
-forward-port : 포트포워딩 설정
-log : Syslog 기록
-audit : Audit log 기록
-accept : 허용
-reject : 거부
-drop : 차단
+family : IPv4또는 IPv6 선택  
+source : 출발지 IP 설정  
+destination : 목적지 IP 설정  
+service : 서비스규칙 설정  
+port : 포트 설정  
+protocol : 프로토콜 설정  
+forward-port : 포트포워딩 설정  
+accept : 허용  
+reject : 차단 후 차단에대한 응답 전송  
+drop : 차단  
+log : Syslog 기록  
+audit : Audit log 기록  
+  
 
 
 #### 사용예제
