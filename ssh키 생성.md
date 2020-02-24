@@ -1,10 +1,10 @@
 ## SSH 키 생성 및 암호없이 자동 로그인
 클라이언트에서 진행  
 ```
-#] ssh-keygen -t rsa  //rsa 암호화로 키를 생성
+#] ssh-keygen -t rsa                                        //rsa 암호화로 키를 생성
 Enter file in which to save the key (/root/.ssh/id_rsa) :   //저장경로에 대한 설정 입력란으로 경로설정없이 엔터 시 기본 저장 경로(접속한 계정 .ssh 파일 밑)로 저장됨.
 Enter passphrase (empty for no passphrase):                 //암호 입력란으로 자동으로 로그인 시에는 입력없이 엔터(보안상 문제점이 될 수 있음)
-#] ll .ssh                         //.ssh 리스트를 확인하여 id_rsa, id_rsa_pub 파일이 생성되었는지 확인
+#] ll .ssh                                                  //.ssh 리스트를 확인하여 id_rsa, id_rsa_pub 파일이 생성되었는지 확인
 id_rsa
 id_rsa_pub    
 ```
